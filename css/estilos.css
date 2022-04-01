@@ -150,6 +150,30 @@ a{
 
     .publicidad{
     }
+
+    .btnPropio{
+        background-color: #b22a1c;
+        color: #fff;
+    }
+
+.page-link{
+    color: #111;
+    background-color: #f7f7f7;
+}
+
+
+
+.page-item-disabled{
+    color: #fff;
+}
+
+.page-link:hover{
+    color: #7c1b11;
+    background-color: #F68989;
+}
+
+
+    
 .footer{
         background: #111;
         display: flex;
