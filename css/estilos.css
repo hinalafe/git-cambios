@@ -358,20 +358,21 @@ a{
 
 .contenedor{
 	width: auto;
-    margin: 10px auto;
+    margin: 30px 20px;
 	display: grid;
-	grid-gap: 20px;
+	grid-gap: 100px;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(4, auto);
 
-    grid-template-areas:  "contenido contenido sidebar"
-                        "widget-1 widget-2 sidebar"
+    grid-template-areas:  "contenido contenido list-grupo"
+                        "carta carta-2 list-grupo"
                         "footer footer footer";
 }
 
+
 .contenedor > div,
 .contenedor .contenido,
-.contenedor .sidebar,
+.contenedor .list-grupo,
 .contenedor .footer,
 .contenedor .{
 	padding: 10px;
@@ -388,40 +389,60 @@ grid-area: contenido;
     color: #444;
 }
 
-.contenedor .sidebar{
+.contenedor .list-grupo{
 	grid-column: 4;
 	background: #faa43d;
 	text-align: center;
-	display: flex;
 	align-items: center;
 	justify-content: center;
     width: 10;
     min-height: 100px;
+    display: grid;
+    font-size: 1rem;
     
-grid-area: sidebar;
+grid-area: list-grupo;
 }
 
-.contenedor .widget-1,
-.contenedor .widget-2{
-	background: #55a8fd;
-	color: #fff;
-    grid-column: span 3;
-	height: 150px;
-	text-align: center;
-	display: flex;
+
+.carta .carta-2{
+        color: #7c1b11;
+        height:450px;
+        width: 50px;
+        display: grid align-items: center;
+        justify-content: center;
+        min-height: 40px;
+}
+
+.imagen-carta{
+        padding: 10px 10px 20px;
+        background-color: #f6f6f6;
+        box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.contenedor .carta,
+.contenedor .carta-2{
+	height:450px;
+    width: 500px;
+	display: grid
 	align-items: center;
 	justify-content: center;
     min-height: 40px;
-    grid-row: auto;
-
 }
 
-.contenedor .widget-1{
-    grid-area: widget-1;
+.titulo-producto{
+    color: #555;
 }
 
-.contenedor .widget-2{
-    grid-area: widget-2;
+.texto-producto{
+    color: #7c1b11;
+}
+
+.contenedor .carta{
+    grid-area: carta;
+}
+
+.contenedor .carta-2{
+    grid-area: carta-2;
 }
 
 
@@ -434,14 +455,15 @@ grid-area: sidebar;
     display: flex;
     justify-content: center;
     grid-area: footer;
+    margin-top: 100px;
 }
 
 @media all and (max-width: 768px){
     .contenedor{
         grid-template-areas: "contenido contenido contenido"
-                             "sidebar sidebar sidebar"
-                             "widget-1 widget-1 widget-2 "
-                          "footer footer footer";
+                             "list-grupo list-grupo list-grupo"
+                             "carta carta-2 "
+                          "footer footer footer footer";
     }
 }
 
