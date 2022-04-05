@@ -356,119 +356,27 @@ a{
 
 /* Productos*/
 
-.contenedor{
-	width: auto;
-    margin: 30px 20px;
-	display: grid;
-	grid-gap: 100px;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(4, auto);
-
-    grid-template-areas:  "contenido contenido list-grupo"
-                        "carta carta-2 list-grupo"
-                        "footer footer footer";
+.h1-productos{
+    color: #7c1b11;
+    font-size: 2rem;
 }
 
-
-.contenedor > div,
-.contenedor .contenido,
-.contenedor .list-grupo,
-.contenedor .footer,
-.contenedor .{
-	padding: 10px;
-	border-radius: 4px;
+.h3-productos{
+        color: #555;
+        font-size: 2.2rem;
+        line-height: 1.35em;
 }
 
-
-.contenedor .contenido{
-    background: #fff;
-grid-area: contenido;
+.h3-productos2{
+    color: #555;
+    font-size: 2.2em;
+    line-height: 1.35em;
 }
-
-.h1__productos{
-    color: #444;
-}
-
-.contenedor .list-grupo{
-	grid-column: 4;
-	background: #faa43d;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-    width: 10;
-    min-height: 100px;
-    display: grid;
-    font-size: 1rem;
-    
-grid-area: list-grupo;
-}
-
-
-.carta .carta-2{
-        color: #7c1b11;
-        height:450px;
-        width: 50px;
-        display: grid align-items: center;
-        justify-content: center;
-        min-height: 40px;
-}
-
-.imagen-carta{
+.carta, .carta-2{
         padding: 10px 10px 20px;
         background-color: #f6f6f6;
-        box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .2);
+        box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 20%);
 }
-
-.contenedor .carta,
-.contenedor .carta-2{
-	height:450px;
-    width: 500px;
-	display: grid
-	align-items: center;
-	justify-content: center;
-    min-height: 40px;
-}
-
-.titulo-producto{
-    color: #555;
-}
-
-.texto-producto{
-    color: #7c1b11;
-}
-
-.contenedor .carta{
-    grid-area: carta;
-}
-
-.contenedor .carta-2{
-    grid-area: carta-2;
-}
-
-
-
-.contenedor .footer{
-    background: #000;
-    color: #fff;
-    grid-column: span 4;
-    grid-row-start: span 1;
-    display: flex;
-    justify-content: center;
-    grid-area: footer;
-    margin-top: 100px;
-}
-
-@media all and (max-width: 768px){
-    .contenedor{
-        grid-template-areas: "contenido contenido contenido"
-                             "list-grupo list-grupo list-grupo"
-                             "carta carta-2 "
-                          "footer footer footer footer";
-    }
-}
-
-
-
 /*Imagenes buques*/
 
 .gallery-container{
