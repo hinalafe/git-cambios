@@ -1,0 +1,30 @@
+@media all and (max-width: 918px) {
+    .off {
+        display: none;
+    }
+
+    .nav a {
+        font-size: 20px;
+    }
+
+    .social a {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .articulos {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 444px) {
+    .aside {
+        flex-direction: column;
+    }
+
+    .texto-principal {
+        height: 600px;
+        font-size: 5px;
+    }
+}
