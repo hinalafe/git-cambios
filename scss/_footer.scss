@@ -1,0 +1,17 @@
+.footer {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.pie {
+    width: 500px;
+    text-align: center;
+    a {
+        color: #ececec;
+        font-size: 11px;
+        padding: 0 10px;
+        letter-spacing: 2px;
+    }
+}

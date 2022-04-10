@@ -1,0 +1,71 @@
+a {
+    text-decoration: none;
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap
+}
+
+.margen-interno {
+    padding: 0 50px;
+}
+
+.header {
+    background: url(../Imagenes/fondo.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.menu {
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 150px;
+    align-items: center;
+    border-bottom: 2px solid;
+    padding: 50px;
+}
+
+.logo {
+    flex: 1 1 auto;
+a {
+color: #fff;
+font-size: 30px;
+}
+a:hover {
+color: #F68989;
+}
+}
+
+
+.nav {
+    flex: 5 1 auto;
+a {
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+a:hover {
+    color: #F68989;
+}
+}
+
+.social {
+    flex: 1 1 auto;
+    display: flex;
+    padding: 2px;
+a {
+font-size: 1.5rem;
+color: #fff;
+}
+a:hover {
+    color: #F68989;
+}
+}
+
