@@ -1,3 +1,37 @@
+@media all and (max-width: 1140px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .social {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .aside {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    .texto-principal {
+        height: 450px;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+}
+
 @media all and (max-width: 918px) {
     .off {
         display: none;

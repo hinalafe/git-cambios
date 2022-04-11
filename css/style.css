@@ -1,5 +1,5 @@
 .footer {
-  background: #111;
+  background: salmon;
   display: flex;
   justify-content: center;
   margin-top: 10px; }
@@ -25,6 +25,7 @@ a {
 
 .header {
   background: url(../Imagenes/fondo.jpg);
+  color: #b22a1c;
   background-position: center;
   background-attachment: contain;
   background-size: cover;
@@ -161,3 +162,42 @@ h4 {
 .page-link:hover {
   color: #7c1b11;
   background-color: #F68989; }
+
+@media all and (max-width: 1140px) {
+  .section {
+    flex-direction: column; }
+  .menu {
+    flex-direction: column;
+    height: auto; }
+  .social {
+    flex-direction: row;
+    height: auto; }
+  .aside {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; }
+  h1 {
+    font-size: 16px; }
+  .texto-principal {
+    height: 450px; }
+  h3 {
+    font-size: 13px; } }
+
+@media all and (max-width: 918px) {
+  .off {
+    display: none; }
+  .nav a {
+    font-size: 20px; }
+  .social a {
+    font-size: 20px; } }
+
+@media all and (max-width: 600px) {
+  .articulos {
+    flex-direction: column; } }
+
+@media all and (max-width: 444px) {
+  .aside {
+    flex-direction: column; }
+  .texto-principal {
+    height: 600px;
+    font-size: 5px; } }
