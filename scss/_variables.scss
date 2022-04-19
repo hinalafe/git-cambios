@@ -3,4 +3,44 @@ $colorSecundario: salmon;
 $Letra: 20px;
 $height: 70px;
 $background-color: salmon;
-$background: url(../Imagenes/fondo2.jpg)
+$background: url(../Imagenes/fondo2.jpg);
+
+/*map-get*/
+
+$estilos: (
+    color: #9fd5f1,
+    centro: center,
+    tamañofuente: 20px,
+);
+
+
+.aside{
+    background-color: map-get($estilos, color );
+    text-align: map-get($estilos, centro);
+    font-size: map-get($estilos, tamañofuente);  
+}
+
+/*mixin*/
+
+@mixin sizes ($ancho, $alto){
+    height: $alto;
+    width: $ancho;
+}
+
+.publicidad{
+    @include sizes(200px, 250px)
+}
+
+/*extend*/
+
+.social {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    }
+
+    .social-report {
+        @extend .social;
+        background-color: red;
+    }
