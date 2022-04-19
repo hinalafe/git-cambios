@@ -1,3 +1,24 @@
+/*map-get*/
+.aside {
+  background-color: #9fd5f1;
+  text-align: center;
+  font-size: 20px; }
+
+/*mixin*/
+.publicidad {
+  height: 250px;
+  width: 200px; }
+
+/*extend*/
+.social, .social-report {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px; }
+
+.social-report {
+  background-color: red; }
+
 .footer {
   background: salmon;
   display: flex;
@@ -60,14 +81,14 @@ a {
   .nav a:hover {
     color: #F68989; }
 
-.social {
+.social, .social-report {
   flex: 1 1 auto;
   display: flex;
   padding: 2px; }
-  .social a {
+  .social a, .social-report a {
     font-size: 1.5rem;
     color: #fff; }
-  .social a:hover {
+  .social a:hover, .social-report a:hover {
     color: #F68989; }
 
 * {
@@ -169,7 +190,7 @@ h4 {
   .menu {
     flex-direction: column;
     height: auto; }
-  .social {
+  .social, .social-report {
     flex-direction: row;
     height: auto; }
   .aside {
@@ -188,7 +209,7 @@ h4 {
     display: none; }
   .nav a {
     font-size: 20px; }
-  .social a {
+  .social a, .social-report a {
     font-size: 20px; } }
 
 @media all and (max-width: 600px) {
