@@ -398,7 +398,7 @@ h4 {
 .caja{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     box-sizing: border-box;
     width: 100%;
     padding: 15px;
