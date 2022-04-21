@@ -393,26 +393,35 @@ h4 {
 
 /* Productos*/
 
-
-
-.caja{
+.caja {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
     padding: 15px;
     background: antiquewhite;
-    
+
+}
+.cajita {
+    flex: 1 1 40%;
+    color: #444;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 10px 10px 0 0px;
+    flex: 1 1 45%;
+    background: #ececec;
 }
 
+
+
 .caja img{
-    width: 40%;
+    width: 90%;
     height: auto;
     margin: 50px;
     border: 2px solid #b22a1c;
     box-shadow: 0 0 0 2px white;
-    flex: auto;
+    flex: 1 1 45%;
 }
 
 .h1__productos{

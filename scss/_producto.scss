@@ -1,0 +1,34 @@
+.caja {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    background: antiquewhite;
+    img {
+        width: 40%;
+        height: auto;
+        margin: 50px;
+        border: 2px solid #b22a1c;
+        box-shadow: 0 0 0 2px white;
+        flex: auto;
+    }
+}
+
+
+.h1__productos {
+    background: #7c1b11;
+    color: #ececec;
+}
+
+.contenedor .footer {
+    background: #000;
+    color: #fff;
+    grid-column: span 4;
+    grid-row-start: span 1;
+    display: flex;
+    justify-content: center;
+    grid-area: footer;
+    margin-top: 100px;
+}
