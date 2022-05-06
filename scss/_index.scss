@@ -3,13 +3,12 @@
     padding: 2px;
     box-sizing: border-box;
 }
-
 .texto-principal {
     height: 580px;
+    font-size: 1em;
     display: flex;
     align-items: center;
 }
-
 h1 {
     font-family: 'Lora', serif;
     font-size: 1.5rem;
@@ -17,26 +16,25 @@ h1 {
     font-weight: 300;
     text-align: center;
     line-height: 1.6;
+    background: rgba(0, 0, 0, .2)
 }
-
 .section {
     background: #f7f7f7;
     display: flex;
 }
-
 .articulos {
     background: #f7f7f7;
     flex: 2 1 auto;
     display: flex;
     flex-flow: row wrap;
 }
-
 .article {
     flex: 1 1 40%;
     color: #444;
     font-size: 13px;
+    justify-content: center;
     letter-spacing: 1px;
-    margin: 10px 10px 0 0px;
+    margin: 15px 15px;
     flex: 1 1 45%;
     background: #ececec;
     img {
@@ -51,19 +49,23 @@ h1 {
     display: inline-block;
     }
     a:hover {
-        background: #546cc3;
+        background: #546cc3;    
+    }
+    p{
+        font-size: 15px;
+        margin: 10px;
     }
 }
-
-
-h3 {
+.publicidad{
+    margin-top: 40px;
+}
+h2 {
     color: brown;
-    font-size: 1rem;
+    font-size: 2rem;
     padding: 10px 0;
     margin-top: -10px;
     margin-left: 15px;
 }
-
 .navegacion {
     background: #000;
     flex: 1 1 100%;
@@ -76,46 +78,34 @@ h3 {
     letter-spacing: 2px;
     }
 }
-
-
 .aside {
     flex: 1 1 auto;
     margin: 10px 10px 0 0px;
-    img {
-    width: 100%;
+    &img {
+        width: 100%;
     }
 }
 
-
 h4 {
-    background: #000;
+    font-size: 12px;
     color: #fff;
-    padding: 10px;
     text-transform: uppercase;
 }
-
 .btnPropio {
     background-color: #b22a1c;
     color: #fff;
 }
-
 .page-link {
     color: #111;
     background-color: #f7f7f7;
+    &:hover {
+        color: #7c1b11;
+        background-color: #F68989;
+    }
 }
-
-
-
 .page-item-disabled {
     color: #fff;
 }
-
-.page-link:hover {
-    color: #7c1b11;
-    background-color: #F68989;
-}
-
-
 
 
 
