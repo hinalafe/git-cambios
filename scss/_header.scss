@@ -1,16 +1,13 @@
 a {
     text-decoration: none;
 }
-
 .padre {
     display: flex;
     flex-flow: column nowrap
 }
-
 .margen-interno {
     padding: 0 50px;
 }
-
 .header {
     background: url(../Imagenes/fondo.jpg);
     color: $colorPrincipal;
@@ -20,7 +17,6 @@ a {
     display: flex;
     flex-flow: column nowrap;
 }
-
 .menu {
     background: rgba(0, 0, 0, .5);
     display: flex;
@@ -30,7 +26,6 @@ a {
     border-bottom: 2px solid;
     padding: 50px;
 }
-
 .logo {
     flex: 1 1 auto;
 a {
@@ -41,8 +36,6 @@ a:hover {
 color: #F68989;
 }
 }
-
-
 .nav {
     flex: 5 1 auto;
 a {
@@ -56,7 +49,6 @@ a:hover {
     color: #F68989;
 }
 }
-
 .social {
     flex: 1 1 auto;
     display: flex;
