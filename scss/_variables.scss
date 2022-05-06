@@ -13,7 +13,6 @@ $estilos: (
     tamañofuente: 20px,
 );
 
-
 .aside{
     background-color: map-get($estilos, color );
     text-align: map-get($estilos, centro);
@@ -36,7 +35,6 @@ $estilos: (
 %titulos {
     text-transform: uppercase;
     color: white;
-    border: 1px solid white;
 }
 
 h1.titulo {
